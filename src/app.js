@@ -28,7 +28,7 @@ app.use(express.static(publicPath));
 app.get("", (req, res) => {
   const passLength = Number(req.query.passLength);
   const passSc = req.query.passSc;
-  if (passLength <= 28) {
+  if (passLength <= 28 || !passLength) {
     res.render("index", {
       docTitle: "Home | Password Generator",
       pageTitle: "Generate Password",
