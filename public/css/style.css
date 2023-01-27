@@ -113,26 +113,20 @@ label {
   -webkit-text-stroke: 0.5px;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
+#footer {
   position: absolute;
-  z-index: 1;
+  bottom: 3em;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
+#footer > div > p {
+  font-family: "VT323", monospace;
+  font-size: 1.3em;
+  -webkit-text-stroke: 0.2px;
+}
+
+#footer > div > p > a {
+  text-decoration: none;
+  color: #5700ae;
 }
