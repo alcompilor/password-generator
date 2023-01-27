@@ -28,12 +28,17 @@ app.use(express.static(publicPath));
 app.get("", (req, res) => {
   const passLength = Number(req.query.passLength);
   const passSc = req.query.passSc;
-
-  res.render("index", {
-    docTitle: "Home | Password Generator",
-    pageTitle: "Generate Password",
-    generatedPass: genPass(passLength || 12, passSc || false),
-  });
+  if (passLength <= 28) {
+    res.render("index", {
+      docTitle: "Home | Password Generator",
+      pageTitle: "Generate Password",
+      generatedPass: genPass(passLength || 12, passSc || false),
+    });
+  } else {
+    res.send(
+      "Error: Password generator only supports a maximum of 28 characters!"
+    );
+  }
 });
 
 app.listen(port, (res) => {
