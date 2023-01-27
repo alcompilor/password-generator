@@ -1,0 +1,27 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigcbull/password-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigcbull/password-generator/issues"
+  },
+  "homepage": "https://github.com/bigcbull/password-generator#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "got": "^12.5.3",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
