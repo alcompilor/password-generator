@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #ffda96;
+  background: #08ed6d;
 }
 
 label {
@@ -13,7 +13,7 @@ label {
   font-size: 1.5em;
   letter-spacing: -0.03em;
   -webkit-text-stroke: 0.3px;
-  color: #215653;
+  color: #000;
 }
 
 #main {
@@ -30,7 +30,7 @@ label {
   font-family: "Silkscreen", cursive;
   font-weight: 400;
   letter-spacing: -0.05em;
-  color: #1f6863;
+  color: #000;
   -webkit-text-stroke: 2px;
 }
 
@@ -45,7 +45,7 @@ label {
 #passLength {
   padding: 0.3em 2em;
   border: none;
-  background: #fffcf1;
+  background: #bcfccc;
   border-radius: 0.3em;
   font-size: 1em;
 }
@@ -56,25 +56,25 @@ label {
 }
 
 #passBtn {
-  background-color: #1f6863;
+  background-color: #000;
   border: none;
   padding: 0.5em 1em;
   font-size: 1.5em;
   font-family: "Silkscreen", cursive;
-  color: #fdda9a;
+  color: #08ed6d;
   border-radius: 0.5em;
   cursor: pointer;
   -webkit-text-stroke: 1px;
 }
 
 #passBtn:hover {
-  background-color: #144441;
+  background-color: #000;
 }
 
 #pass-card {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
   align-items: center;
   justify-content: center;
 }
@@ -82,15 +82,16 @@ label {
 #copyBtn {
   padding: 0.3em 1em;
   border: none;
-  color: #fffaf1;
-  background: #215653;
+  color: #4ae973;
+  background: #000;
   border-radius: 0.5em;
   font-size: 1.2em;
   font-family: "VT323", monospace;
+  -webkit-text-stroke: 0.2px;
 }
 
 #copyBtn:hover {
-  background-color: #18413f;
+  background-color: #000;
   cursor: pointer;
 }
 
@@ -103,12 +104,13 @@ label {
 #card {
   font-family: "VT323", monospace;
   font-size: 3em;
-  background: #fffaf1;
-  color: #215653;
+  background: #9effb7;
+  color: #000;
   padding: 0.3em 1em;
   border-radius: 0.5em;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  max-width: 50vw;
+  max-width: 60vw;
+  -webkit-text-stroke: 0.5px;
 }
 
 .tooltip {
